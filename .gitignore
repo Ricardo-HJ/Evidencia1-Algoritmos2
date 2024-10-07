@@ -1,5 +1,11 @@
 # Ignore all .txt files
 *.txt
 
+# Ignore all .pdf files
+*.pdf
+
+#ignore all .zip files
+*.zip
+
 # Ignore all folders
 */
