@@ -48,7 +48,30 @@ Este proyecto realiza un análisis de tres archivos de transmisión (Transmissio
 5. El programa generará un archivo de salida llamado `checking1.txt` con los resultados del análisis.
 
 ## Complejidad Temporal
-- La complejidad temporal general del programa es O(n^3) en el peor caso, donde n es la longitud de la transmisión más larga.
+La complejidad temporal general del programa es O(n^3) en el peor caso, donde n es la longitud de la transmisión más larga.
+
+## Reflexión sobre los Algoritmos Utilizados
+
+### 1. Búsqueda de Subsecuencias
+- **Algoritmo**: Programación dinámica
+- **Complejidad**: O(n * m), donde n es la longitud de la cadena más larga y m es la longitud de la subsecuencia buscada.
+- **Explicación**: Este algoritmo construye una matriz de programación dinámica para encontrar todas las ocurrencias de una subsecuencia en una cadena más larga. Es eficiente para cadenas largas y múltiples búsquedas.
+
+### 2. Algoritmo de Manacher (Búsqueda de Palíndromos)
+- **Complejidad**: O(n), donde n es la longitud de la cadena.
+- **Explicación**: Este algoritmo ingenioso encuentra el palíndromo más largo en tiempo lineal. Utiliza la simetría de los palíndromos para evitar comparaciones innecesarias, lo que lo hace mucho más eficiente que el enfoque ingenuo O(n^2).
+
+### 3. Búsqueda de Substrings Comunes más Largos
+- **Algoritmo**: Programación dinámica
+- **Complejidad**: O(n * m), donde n y m son las longitudes de las dos cadenas comparadas.
+- **Explicación**: Similar al algoritmo de subsecuencias, pero busca substrings contiguos. Construye una matriz para encontrar la subcadena común más larga entre dos cadenas.
+
+### Optimizaciones y Consideraciones
+- Se utilizan estructuras de datos eficientes como vectores y matrices para almacenar resultados intermedios.
+- La modularización del código en diferentes archivos de encabezado mejora la legibilidad y mantenibilidad.
+- Se implementan funciones auxiliares para reutilizar código y mejorar la eficiencia general.
+
+Esta implementación equilibra la eficiencia algorítmica con la claridad del código, permitiendo un análisis efectivo de grandes volúmenes de datos de transmisión.
 
 ## Autor
 Ricardo Hernandez - A00837337
