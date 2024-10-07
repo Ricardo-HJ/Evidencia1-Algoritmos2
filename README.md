@@ -3,6 +3,9 @@
 ## Descripción
 Este proyecto realiza un análisis de tres archivos de transmisión (Transmission1.txt, Transmission2.txt, Transmission3.txt) y un archivo de códigos (mcode.txt). El programa busca subsecuencias, palíndromos y substrings comunes entre las transmisiones.
 
+## Repositorio GitHub
+[https://github.com/Ricardo-HJ/Evidencia1-Algoritmos2](https://github.com/Ricardo-HJ/Evidencia1-Algoritmos2)
+
 ## Archivos del Proyecto
 - `Evidencia1.cpp`: Archivo principal que contiene la función `main()`.
 - `Code.h`: Contiene funciones para el análisis de subsecuencias.
@@ -21,23 +24,28 @@ Este proyecto realiza un análisis de tres archivos de transmisión (Transmissio
    - Identifica los substrings más largos comunes entre pares de transmisiones.
 
 ## Cómo Usar
-1. Asegúrese de tener los siguientes archivos en el mismo directorio que el ejecutable:
+1. Clone el repositorio:
+   ```
+   git clone https://github.com/Ricardo-HJ/Evidencia1-Algoritmos2.git
+   ```
+
+2. Asegúrese de tener los siguientes archivos en el mismo directorio que el ejecutable:
    - transmission1.txt
    - transmission2.txt
    - transmission3.txt
    - mcode.txt
 
-2. Compile el programa:
+3. Compile el programa:
    ```
    g++ Evidencia1.cpp -o Evidencia1
    ```
 
-3. Ejecute el programa:
+4. Ejecute el programa:
    ```
    ./Evidencia1
    ```
 
-4. El programa generará un archivo de salida llamado `checking1.txt` con los resultados del análisis.
+5. El programa generará un archivo de salida llamado `checking1.txt` con los resultados del análisis.
 
 ## Complejidad Temporal
 - La complejidad temporal general del programa es O(n^3) en el peor caso, donde n es la longitud de la transmisión más larga.
